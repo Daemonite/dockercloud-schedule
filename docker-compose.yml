@@ -1,0 +1,6 @@
+dc-schedule:
+  build: .
+  environment:
+    - "NODECLUSTER=uuid-for-nodecluster"
+    - "DOCKERCLOUD_USER=username"
+    - "DOCKERCLOUD_APIKEY=mysteryapikeyfordockercloud"
