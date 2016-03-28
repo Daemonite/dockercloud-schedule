@@ -1,5 +1,19 @@
 ## Daemonite Schedule
 
+**dockercloud-stack.yml**
+
+```yaml
+dockercloud-schedule:
+  image: 'daemonite/dockercloud-schedule:latest'
+  autoredeploy: true
+  environment:
+    - DOCKERCLOUD_APIKEY=***YOUR-API-KEY***
+    - DOCKERCLOUD_USER=***YOUR-USERNAME***
+    - NODECLUSTER=***YOUR-NODECLUSTER-UUID***
+  tags:
+    - prod
+```
+
 Docker Cloud PaaS scheduling service for staging cluster; Skunkworks.
 
 - h/t https://github.com/alexdebrie/tutum-schedule
